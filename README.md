@@ -8,14 +8,14 @@ https://luisroxxx.github.io/galleria-portal-cliente/
 
 ## Como testar
 
-1. Na entrada, clique em **Usar CPF de demonstração** e depois **Entrar no portal**.
+1. Na entrada, clique em **Usar CPF de demonstração** escolha **WhatsApp, SMS ou E-mail** e depois **Entrar no portal**.
 2. Use o código **123456** ou o botão de preenchimento de exemplo.
 3. Abra o contrato e confira o resumo da proposta fictícia.
 4. Inicie a biometria simulada: orientações, ilustração de enquadramento, processamento e confirmação.
-5. Abra as três fichas e confirme a leitura de cada uma. Confirme o aceite demonstrativo e a assinatura.
+5. Abra as três fichas e confirme a leitura de cada uma. Marque o aceite demonstrativo e clique em **Assinar fichas cadastrais** na mesma tela.
 6. Confira a tela **2 de 3 concluídas**: a CCI continua pendente.
-7. Leia a CCI, confirme a revisão e siga para o certificado.
-8. Autorize no ambiente externo simulado e volte ao portal.
+7. Leia a CCI já aberta e siga para o certificado, sem checkbox adicional.
+8. Com a CCI visível, selecione **VIDaaS** abaixo do documento e simule a autorização no modal da própria tela. Clique em **Voltar ao Galleria e confirmar**.
 9. Aguarde a confirmação da CCI para visualizar **3 de 3 etapas concluídas**.
 10. Acompanhe a operação e, opcionalmente, clique em **Simular contrato ativo** para explorar pagamentos, parcelas e antecipação.
 
@@ -29,7 +29,7 @@ https://luisroxxx.github.io/galleria-portal-cliente/
 
 ## Escopo e limites
 
-Não há autenticação real, envio de SMS, acesso à câmera, prova de vida real, assinatura com validade jurídica, emissão de boleto ou transação financeira. Utilize apenas o CPF fictício 000.000.000-00 e o código 123456. Não forneça dados pessoais reais.
+Não há autenticação real, envio de SMS, WhatsApp ou e-mail, acesso à câmera, prova de vida real, assinatura com validade jurídica, emissão de boleto ou transação financeira. Utilize apenas o CPF fictício 000.000.000-00 e o código 123456. Não forneça dados pessoais reais.
 
 Contratos, documentos, valores e datas são fictícios. A área de antecipação permite simular a solicitação de cotação; não calcula desconto, saldo, novo prazo ou nova parcela. O boleto demonstrativo não possui código de pagamento.
 
