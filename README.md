@@ -8,7 +8,7 @@ https://luisroxxx.github.io/galleria-portal-cliente/
 
 ## Como testar
 
-1. Na entrada, clique em **Usar CPF de demonstração** escolha **WhatsApp, SMS ou E-mail** e depois **Entrar no portal**.
+1. Na entrada, utilize o CPF demonstrativo **000.000.000-00**, selecione o cartão **SMS, WhatsApp ou E-mail** e clique em **Receber código**. O destino é sempre o contato previamente cadastrado, sem campo para informar telefone ou e-mail.
 2. Use o código **123456** ou o botão de preenchimento de exemplo.
 3. Abra o contrato e confira o resumo da proposta fictícia.
 4. Inicie a biometria simulada: orientações, ilustração de enquadramento, processamento e confirmação.
