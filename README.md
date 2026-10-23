@@ -1,27 +1,48 @@
 # Galleria — Portal do Cliente
 
-Protótipo mobile da jornada de assinatura, com identidade Galleria e três etapas: biometria, fichas cadastrais e contrato/CCI.
+Demonstração mobile completa da experiência de acesso, assinatura e pós-contrato.
 
-## Ativar o navegável
+## Navegável
 
-No GitHub: **Settings → Pages → Deploy from a branch → main → / (root) → Save**.
+https://luisroxxx.github.io/galleria-portal-cliente/
 
-Após a publicação, o GitHub exibirá o endereço do site nessa mesma tela. Compartilhe o link do site com o time para navegar sem instalar nada.
+## Como testar
 
-## O que testar
+1. Na entrada, clique em **Usar CPF de demonstração** e depois **Entrar no portal**.
+2. Use o código **123456** ou o botão de preenchimento de exemplo.
+3. Abra o contrato e confira o resumo da proposta fictícia.
+4. Inicie a biometria simulada: orientações, ilustração de enquadramento, processamento e confirmação.
+5. Abra as três fichas e confirme a leitura de cada uma. Confirme o aceite demonstrativo e a assinatura.
+6. Confira a tela **2 de 3 concluídas**: a CCI continua pendente.
+7. Leia a CCI, confirme a revisão e siga para o certificado.
+8. Autorize no ambiente externo simulado e volte ao portal.
+9. Aguarde a confirmação da CCI para visualizar **3 de 3 etapas concluídas**.
+10. Acompanhe a operação e, opcionalmente, clique em **Simular contrato ativo** para explorar pagamentos, parcelas e antecipação.
 
-A abertura acontece após a assinatura das fichas, com **2 de 3 etapas concluídas** e a CCI pendente. Clique em **Continuar para a última etapa**. Os atalhos no rodapé permitem testar todas as etapas.
+## Situações adicionais
 
-A confirmação geral só aparece depois da confirmação simulada da CCI. O retorno do aplicativo do certificado, por si só, mantém a etapa pendente.
+- **Testar cenários** no rodapé: falha na próxima biometria, cancelamento no certificado e demora na confirmação da CCI.
+- **Salvar e continuar depois**, saída e recarga: o progresso fictício é salvo no mesmo navegador. O acesso é reiniciado e a jornada retoma a partir das etapas confirmadas.
+- Na demora da CCI, use **Consultar novamente**. A primeira consulta adicional mantém a pendência; a seguinte simula confirmação.
+- **Reiniciar jornada** apaga somente o progresso desta demonstração.
+- O resumo de assinatura pode ser baixado como TXT demonstrativo.
 
-## Arquivos
+## Escopo e limites
 
-- `index.html`: interface, estilos e navegação.
-- `assets/galleria-logo.png`: logo fornecido para o projeto.
-- `.nojekyll`: publicação estática sem processamento Jekyll.
+Não há autenticação real, envio de SMS, acesso à câmera, prova de vida real, assinatura com validade jurídica, emissão de boleto ou transação financeira. Utilize apenas o CPF fictício 000.000.000-00 e o código 123456. Não forneça dados pessoais reais.
 
-Abra `index.html` no navegador para executar localmente. Não é necessário instalar dependências.
+Contratos, documentos, valores e datas são fictícios. A área de antecipação permite simular a solicitação de cotação; não calcula desconto, saldo, novo prazo ou nova parcela. O boleto demonstrativo não possui código de pagamento.
 
-## Escopo
+Os estados ficam no localStorage apenas para testar retomada. Em produção, a fonte de verdade deve ser o backend, com autenticação, autorização por operação e confirmação idempotente dos provedores. O retorno do certificado não equivale à assinatura do documento.
 
-Demonstração com dados fictícios, sem captura de biometria, assinatura real, emissão de boletos ou integração financeira. Nenhum vídeo, dado de cliente ou credencial foi incluído no repositório. A integração real exige backend e confirmação dos provedores.
+## Arquivos e execução
+
+- `index.html`: interface, estilos e navegação sem dependências externas.
+- `assets/galleria-logo.png`: logo fornecido pelo usuário, somente Galleria.
+- `.nojekyll`: publicação estática.
+
+Abra `index.html` em um navegador, ou sirva a pasta localmente. GitHub Pages está configurado para a branch `main`, pasta raiz.
+
+## Validação desta versão
+
+Verificados no navegador: entrada e código de exemplo; proposta; biometria; bloqueio por documentos não lidos; leitura das três fichas; assinatura parcial; saída e retomada; leitura da CCI; cancelamento e nova tentativa no certificado; retorno e confirmação final; acompanhamento e ativação fictícia; valor de antecipação inválido e cenário válido.
